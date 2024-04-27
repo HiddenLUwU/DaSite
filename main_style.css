@@ -1,0 +1,88 @@
+h1 {color: #162900;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    font-size: 50px}
+
+a.logout_b {margin-left: 150px;
+              margin-top: 20px;
+              background: #81C23D;
+              font-size : 30px;
+              color: #FFFFFF;
+              border-radius: 0.8em 0 0.8em 0;
+              border: 5px solid #3E7500;
+              width: 300px;}
+
+a.logout_b:link,
+a.logout_b:visited,
+a.logout_b:focus {margin-left: 150px;
+              margin-top: 20px;
+              background: #81C23D;
+              font-size : 30px;
+              border-radius: 0.8em 0 0.8em 0;
+              border: 5px solid #3E7500;
+              width: 300px}
+
+a.logout_b:hover {
+  background: #67A527;
+  color: #FFFFFF;
+  font-size : 32px;
+  border-radius: 0.8em 0 0.8em 0;
+  border: 5px solid #3E7500;
+  width: 300px}
+
+h3 {color: #2F5700;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center
+    font-size: 30px}
+img {display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+.carousel-control-next{width: 100px;
+                       margin-left: 150px;
+                       margin-right: 150px;}
+
+.carousel-control-prev{width: 100px;
+                       margin-left: 150px;
+                       margin-right: 150px;}
+ul {padding: 0;
+    width: 100%;}
+
+li {display: inline;}
+
+h4 {color: red;
+    margin-left: 150px;
+    margin-right: 150px}
+
+.carousel {z-index: 1;}
+
+.visually-hidden {color: #162900; font-size: 20px}
+
+.buttonsL {max-height: 100px}
+
+a.plants_buttons {text-decoration: none;
+                  display: inline-block;
+                  width: 10%;
+                  margin: 0.5%;
+                  margin-left: 8%;
+                  text-align: center;
+                  line-height: 3;
+                  color: #FFFFFF;}
+
+a.plants_buttons:link,
+a.plants_buttons:visited,
+a.plants_buttons:focus {background: #81C23D;
+                        font-size : 30px;
+                        border-radius: 0.8em 0 0.8em 0;
+                        border: 5px solid #3E7500;}
+a.plants_buttons:hover {background: #67A527;
+                        color: #FFFFFF;
+                        font-size : 32px;
+                        border-radius: 0.8em 0 0.8em 0;
+                        border: 5px solid #3E7500;}
+
+li:last-child a.plants_buttons {margin-right: 0;}
+
+

@@ -1,0 +1,32 @@
+body {
+         box-sizing: border-box;
+         margin: 0;
+         background-color: #F0FFDB;
+         }
+
+header {
+       background-color: #81C23D;
+       height:100px;
+       position: fixed;
+       width: 100%;
+       max-width: 2470px;
+       margin: 0 auto;
+       height: 60px;
+     }
+
+ .topnav a {
+             float: left;
+             color: #FFFFFF;
+             text-align: center;
+             text-decoration: none;
+             padding: 5px 10px;
+             }
+
+ .topnav a:hover {
+                 background-color: #67A527;
+                 }
+
+
+ #topnav-right {
+                 float: right;
+                 }

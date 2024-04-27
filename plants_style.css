@@ -1,0 +1,83 @@
+h1 {color: #162900;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 50px}
+h3 {color: #2F5700;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 30px}
+img {display: block;
+    margin-left: auto;
+    margin-right: auto }
+button {margin-left: 150px;
+    margin-right: 150px;}
+h4 {color: #2F5700;
+    font-size: 30px;
+    margin-right: 150px;}
+ul{color: #2F5700;
+    margin-left: 150px;
+    font-size: 30px}
+ol{color: #2F5700;
+    margin-left: 150px;
+    font-size: 30px}
+
+.visually-hidden {color: #162900; font-size: 20px}
+
+.carousel-control-next{width: 100px;
+                       margin-left: 150px;
+                       margin-right: 150px;}
+
+.carousel-control-prev{width: 100px;
+                       margin-left: 150px;
+                       margin-right: 150px;}
+
+.btn-primary {margin-left: 150px;
+              margin-top: 20px;
+              background: #81C23D;
+              font-size : 30px;
+              border-radius: 0.8em 0 0.8em 0;
+              border: 5px solid #3E7500;
+              width: 200px
+}
+
+.btn-primary:link,
+.btn-primary:visited,
+.btn-primary:focus,
+.btn-primary:disabled {margin-left: 150px;
+              margin-top: 20px;
+              background: #81C23D;
+              font-size : 30px;
+              border-radius: 0.8em 0 0.8em 0;
+              border: 5px solid #3E7500;
+              width: 200px}
+
+.btn-primary:hover {
+  background: #67A527;
+  color: #FFFFFF;
+  font-size : 32px;
+  border-radius: 0.8em 0 0.8em 0;
+  border: 5px solid #3E7500;
+}
+
+.form-control-file {margin-left: 150px;
+                    margin-top: 20px;
+                    background: #81C23D;
+                    font-size : 20px;
+                    border-radius: 0.8em 0 0.8em 0;
+                    border: 5px solid #3E7500;
+                    color: #FFFFFF;
+                    max-width: 360px}
+
+.form-control-file:hover {
+  background: #67A527;
+  color: #FFFFFF;
+  font-size : 22px;
+  border-radius: 0.8em 0 0.8em 0;
+  border: 5px solid #3E7500;
+}
+
+p {margin-left: 150px}
+
+.form-control {margin-left: 150px;
+               max-width: 600px;
+               margin-right: 450px}
