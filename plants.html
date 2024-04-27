@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block styling %}
+<link rel="stylesheet" type="text/css" href="/static/css/plants_style.css"/>
+{% endblock %}
+
+{% block content %}
+<title>{{info[0]}}</title>
+<h1>{{info[1]}}</h1>
+<h3>{{info[2]}}</h3>
+<br>
+<img src="/static/img/sep.png">
+<br>
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/img/{{pics[0]}}.png" class="d-block w-90" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/{{pics[1]}}.png" class="d-block w-90" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/{{pics[2]}}.png" class="d-block w-90" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/{{pics[3]}}.png" class="d-block w-90" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/{{pics[4]}}.png" class="d-block w-90" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="visually-hidden">Назад</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="visually-hidden">Вперёд</span>
+    </button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<br>
+<img src="/static/img/sep1.png" width="100%">
+<br>
+<h1>{{info[3]}}</h1>
+<br>
+<ul>
+    <li><h4>{{info[4]}}</h4></li>
+    <li><h4>{{info[5]}}</h4></li>
+    <li><h4>{{info[6]}}</h4></li>
+    <li><h4>{{info[7]}}</h4></li>
+</ul>
+<img src="/static/img/sep3.png" width="50%">
+<br>
+<h1>{{info[8]}}</h1>
+<img src="/static/img/{{pics[5]}}" alt="..." align="right" style="margin-right: 10px"/>
+
+<ol>
+    {% for x in range(grow|length) %}
+        <li><h4>{{grow[x]}}</h4></li>
+        {% if x == 3%}
+            <img src="/static/img/{{pics[6]}}" alt="..." align="right" style="margin-right: 10px"
+                 height="150px" width="600px"/>
+        {% endif %}
+    {% endfor %}
+</ol>
+<br>
+<img src="/static/img/sep5.gif" width="100%">
+<br>
+<h1>{{info[10]}}</h1>
+<br>
+<ul>
+    {% for item in facts %}
+        <li><h4>{{item}}</h4></li>
+    {% endfor %}
+</ul>
+<br>
+<img src="/static/img/sep6.png" width="70%" height="160px">
+<br>
+    <h1>Картинки, приложенные пользователями</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+                {{ form.hidden_tag() }}
+                <p>
+                    <h3>{{ form.image.label }}</h3>
+                    {{ form.image(class="form-control", type="file") }}<br>
+                </p>
+                <p>
+                    <h3>{{ form.message.label }}</h3>
+                    {{ form.message(class="form-control", type="string") }}<br>
+                </p>
+                {% if current_user.is_authenticated %}
+                    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+                    <div>{{ message }}</div>
+                {% else %}
+                    <p>{{ form.submit(type="submit", disabled=True, class="btn btn-primary") }}</p>
+                    <div>{{ message }}</div>
+                    <br><br>
+                    <h3>Авторизуйтесь, чтобы добавлять картинки на сайт</h3>
+                {% endif %}
+            </form>
+<br>
+<img src="/static/img/sep1.png" width="100%">
+<br>
+{% for x in range(a) %}
+        <img src={{messages[x][1]}} style="margin-left: 150px">
+        <h3>{{messages[x][0]}}</h3>
+        <h3>Автор фотографии: {{messages[x][2]}}, фотография выложена {{messages[x][3]}}</h3>
+        <br>
+        <br>
+{% endfor %}
+<br>
+{% endblock %}
