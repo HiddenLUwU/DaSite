@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block styling %}
+<link rel="stylesheet" type="text/css" href="/static/css/reg_log.css"/>
+{% endblock %}
+
+
+{% block content %}
+<title>Регистрация</title>
+<h1>Регистрация</h1>
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        <h3>{{ form.email.label }}</h3>
+        {{ form.email(class="form-control", type="email") }}<br>
+        {% for error in form.email.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        <h3>{{ form.password.label }}</h3>
+        {{ form.password(class="form-control", type="password") }}<br>
+        {% for error in form.password.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        <h3>{{ form.password_again.label }}</h3>
+        {{ form.password_again(class="form-control", type="password") }}<br>
+        {% for error in form.password_again.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        <h3>{{ form.nickname.label }}</h3>
+        {{ form.nickname(class="form-control") }}
+        {% for error in form.nickname.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    {{message}}
+</form>
+{% endblock %}
