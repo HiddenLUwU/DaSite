@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block styling %}
+<link rel="stylesheet" type="text/css" href="/static/css/main_style.css"/>
+{% endblock %}
+
+{% block content %}
+<title>Главная</title>
+<h1>Добро пожаловать на сайт для садоводов и огородников!</h1><br>
+<br>
+<h4>ВНИМАНИЕ!!! На сайте происходит лютая дичь, половину текста написал ChatGPT, вторую половину кот, который лег на
+    клавиатуру. Так что тексты читать не обязательно.</h4><br>
+<h3>На этом сайте вы можете прочитать важную информацию про разные растения, а также пообщаться с другими садоводами,
+    поделиться опытом и какой либо информацией. Регистрируйся сейчас и получи доступ к возможности выложить свои
+    фотографии с комментариями на сайт!</h3><br>
+<img src="/static/img/sep6.png" width="70%" height="160px"><br>
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/img/garden1.jpg" class="d-block w-90" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/garden2.png" class="d-block w-90" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/garden3.png" class="d-block w-90" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="visually-hidden">Назад</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="visually-hidden">Вперёд</span>
+    </button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<br>
+<img src="/static/img/sep1.png" width="100%">
+<br>
+<div class="alert alert-success" role="alert">
+    <h1>Страницы с информацией о растениях:</h1>
+</div>
+<br>
+<div class="buttonsL">
+<ul>
+    <li><a href="/plants/carrot" class="plants_buttons">Морковь</a></li>
+    <li><a href="/plants/potato" class="plants_buttons">Картофель</a></li>
+    <li><a href="/plants/cabbage" class="plants_buttons">Капуста</a></li>
+    <li><a href="/plants/tomato" class="plants_buttons">Томат</a></li>
+    <li><a href="/plants/cucumber" class="plants_buttons">Огурец</a></li>
+</ul>
+</div>
+<br>
+<img src="/static/img/sep5.gif" width="100%">
+<br>
+{% endblock %}
